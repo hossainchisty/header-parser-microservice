@@ -21,10 +21,10 @@ app.get('/', function (req, res) {
 
 app.get('/api/whoami', function (req, res) {
   const ipaddress = req.ip
-  const lang = req.headers['accept-language']
+  const language = req.headers['accept-language']
   const software = req.headers['user-agent']
   res.json({ 
-    ipaddress, lang, software
+    ipaddress, language, software
    });
 });
 
